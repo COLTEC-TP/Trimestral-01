@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="br.ufmg.coltec.tp.moreaqui.NovoImovelActivity">
+
+
+    <EditText
+        android:layout_marginTop="100dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Nomeq"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Nome" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Enderecoq"
+        android:layout_below="@+id/Nomeq"
+        android:layout_centerHorizontal="true"
+        android:hint="Endereco"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Cidadeq"
+        android:layout_below="@+id/Enderecoq"
+        android:layout_centerHorizontal="true"
+        android:hint="Cidade"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Valorq"
+        android:layout_below="@+id/Cidadeq"
+        android:layout_centerHorizontal="true"
+        android:hint="Valor"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Telefoneq"
+        android:layout_below="@+id/Valorq"
+        android:layout_centerHorizontal="true"
+        android:hint="Telefone"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Telefoneq"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Add" />
+
+</RelativeLayout>
