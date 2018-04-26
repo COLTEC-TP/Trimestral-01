@@ -30,6 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:textColor="#343563"
         android:layout_marginLeft="30dp"
         android:textSize="15dp"
         android:text="Rua Roquete mendonca"/>
@@ -42,6 +43,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:textColor="#343563"
+
         android:layout_marginLeft="30dp"
         android:textSize="15dp"
         android:text="983459"/>
@@ -52,6 +55,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:textColor="#343563"
+
         android:layout_marginLeft="30dp"
         android:layout_marginBottom="15dp"
         android:textSize="15dp"
