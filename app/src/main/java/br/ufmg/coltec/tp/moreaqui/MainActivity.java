@@ -31,7 +31,6 @@ public class MainActivity extends Activity {
         //Atualizar a lista sempre
         ImovelDAO dao = ImovelDAO.getInstance();
         this.atualizarLista(dao.getImoveis());
-        Toast.makeText(MainActivity.this,"Resumiu e atualizou",Toast.LENGTH_LONG).show();
     }
 
     @Override
