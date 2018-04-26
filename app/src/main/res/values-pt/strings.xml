@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MoreAqui</string>
+    <string name="name">Nome</string>
+    <string name="address">Endereço</string>
+    <string name="city">Cidade</string>
+    <string name="phone">Telefone</string>
+    <string name="value">Valor</string>
+    <string name="confirm">Confirmar</string>
+    <string name="error">Nada foi Encontrado</string>
+    <string name="add">Adicionar</string>
+    <string name="search">Procurar</string>
+
+</resources>
