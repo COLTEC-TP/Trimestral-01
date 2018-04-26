@@ -1,3 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MoreAqui</string>
+    <string name="app_name">LiveHere</string>
+
+    <string name="moneyUnit">US$</string>
+
+    <string name="notFound">Nothing found</string>
+
+    <string name="empty">Please fill all fields</string>
+
+    <string name="name">Property Name</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="value">Amount of rent</string>
+    <string name="phone">Phone</string>
+    <string name="button">Register</string>
+
 </resources>

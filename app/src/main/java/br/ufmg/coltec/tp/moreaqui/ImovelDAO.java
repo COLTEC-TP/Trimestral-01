@@ -89,6 +89,13 @@ public class ImovelDAO {
         // Dica: Para implementar a filtragem, você deverá verificar se o parâmetro "nome"
         // está incluso dentro do nome de cada imóvel (Utilize o String.contains)
 
+        final int quantidadeT = imoveis.size();
+        int i = 0;
+        while (i<quantidadeT){
+            Imovel imovel = imoveis.get(i);
+            if(imovel.getNome().toLowerCase().contains(nome.toLowerCase())) imoveisFiltrados.add(imovel);
+            i++;
+        }
 
         return imoveisFiltrados;
     }
