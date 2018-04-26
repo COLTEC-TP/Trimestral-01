@@ -43,7 +43,7 @@ public class ImoveisAdapter extends BaseAdapter {
         Imovel imovel = (Imovel) this.getItem(i);
 
         //TODO implementar mecanismo para estilizar elemento da lista
-        View newView = LayoutInflater.from(this.context).inflate(R.layout.list_item, viewGroup, false);
+        View newView = LayoutInflater.from(this.context).inflate(R.layout.adapter_imoveis, viewGroup, false);
 
         TextView nome = newView.findViewById(R.id.item_nome);
         TextView valor = newView.findViewById(R.id.item_valor);
