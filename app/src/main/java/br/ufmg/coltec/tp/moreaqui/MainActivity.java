@@ -15,6 +15,8 @@ import android.widget.SearchView;
 public class MainActivity extends Activity {
 
 
+    ImoveisAdapter ia;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -98,5 +100,13 @@ public class MainActivity extends Activity {
 
         ListView imoveisList = findViewById(R.id.imoveisList);
         imoveisList.setAdapter(new ImoveisAdapter(this, imoveis));
+        // Se o adapter for null, cria o adapter, se não notifica que seu dataset teve alteração (No seu caso a lista de livros).
+
+        if (ia == null) {
+            ia = new ImoveisAdapter(this, imoveis);
+            imoveisList.setAdapter(ia);
+        } else {
+            ia.notifyDataSetChanged();
+        }
     }
 }
