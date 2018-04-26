@@ -1,6 +1,7 @@
 package br.ufmg.coltec.tp.moreaqui;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -41,10 +42,20 @@ public class ImoveisAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         Imovel imovel = (Imovel) this.getItem(i);
 
-        //TODO implementar mecanismo para estilizar elemento da lista
-        TextView lblNomeImovel = new TextView(this.context);
-        lblNomeImovel.setText(imovel.getNome() + " -- " + imovel.getValor());
+        View newView = LayoutInflater.from(this.context).inflate(R.layout.adapter_imoveis, viewGroup, false);
 
-        return lblNomeImovel;
+        TextView nome = newView .findViewById(R.id.nome);
+        TextView endereco = newView.findViewById(R.id.endereco);
+        TextView cidade = newView.findViewById(R.id.cidade);
+        TextView valor = newView.findViewById(R.id.valor);
+        TextView telefone = newView.findViewById(R.id.telefone);
+
+        nome.setText(imovel.getNome());
+        endereco.setText(imovel.getEndereco());
+        cidade.setText(imovel.getCidade());
+        valor.setText(imovel.getValor().toString());
+        telefone.setText(imovel.getTelefone().toString());
+
+        return newView;
     }
 }
