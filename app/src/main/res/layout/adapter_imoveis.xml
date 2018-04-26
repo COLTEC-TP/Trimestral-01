@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblNomeImovel"
+        android:textSize="25dp"
+        android:text="My Language"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/lblPreco"
+        android:textSize="25dp"
+        android:text="Preco"/>
+
+    <TextView
+        android:id="@+id/lblEndereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lblNomeImovel"
+        android:text="My Language"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/lblTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblNomeImovel"
+        android:layout_alignBottom="@+id/lblNomeImovel"
+        android:layout_marginStart="21dp"
+        android:layout_toEndOf="@+id/lblNomeImovel"
+        android:text="My Language"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/lblCidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lblPreco"
+        android:layout_below="@+id/lblPreco"
+        android:text="My Language"
+        android:textSize="10dp" />
+
+
+
+
+</RelativeLayout>

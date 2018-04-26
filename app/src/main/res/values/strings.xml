@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MoreAqui</string>
+
+    <string name="addImovel">Add Imovel</string>
+    <string name="nome">Name</string>
+    <string name="cidade">City</string>
+    <string name="valor">Value</string>
+    <string name="telefone">Tel</string>
+    <string name="endereco">Adress</string>
+    <string name="botaoCadastrar">Add</string>
+
 </resources>
