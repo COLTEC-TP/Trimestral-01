@@ -1,10 +1,13 @@
 package br.ufmg.coltec.tp.moreaqui;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -41,10 +44,23 @@ public class ImoveisAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         Imovel imovel = (Imovel) this.getItem(i);
 
-        //TODO implementar mecanismo para estilizar elemento da lista
-        TextView lblNomeImovel = new TextView(this.context);
-        lblNomeImovel.setText(imovel.getNome() + " -- " + imovel.getValor());
+        View newView = LayoutInflater.from(this.context).inflate(R.layout.adapter_imoveis, viewGroup, false);
 
-        return lblNomeImovel;
+        // Recuperando os TextViews
+        TextView nomeImovel = newView.findViewById(R.id.nome);
+        TextView valorImovel = newView.findViewById(R.id.valor);
+        TextView enderecoImovel = newView.findViewById(R.id.endereco);
+        TextView cidadeImovel = newView.findViewById(R.id.cidade);
+        TextView telefoneImovel = newView.findViewById(R.id.telefone);
+
+
+        //TODO implementar mecanismo para estilizar elemento da lista
+        nomeImovel.setText(imovel.getNome());
+        valorImovel.setText("R$ " + imovel.getValor().toString());
+        enderecoImovel.setText(imovel.getEndereco());
+        cidadeImovel.setText(imovel.getCidade());
+        telefoneImovel.setText(imovel.getTelefone());
+
+        return newView;
     }
 }

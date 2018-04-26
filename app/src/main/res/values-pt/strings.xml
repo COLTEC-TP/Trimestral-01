@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MoreAqui</string>
+
+    <string name="propertie_name"> Nome: </string>
+    <string name="propertie_address"> Endereço: </string>
+    <string name="propertie_city"> Cidade: </string>
+    <string name="propertie_phone"> Telefone de contato: </string>
+    <string name="propertie_price"> Valor: </string>
+
+    <string name="search"> Pesquisar </string>
+    <string name="add"> Adicionar Imóvel </string>
+</resources>
