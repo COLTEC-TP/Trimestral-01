@@ -1,50 +1,54 @@
 package br.ufmg.coltec.tp.moreaqui;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
-/**
- * Adapter responsável por carregar os imóveis na lista
- */
-public class ImoveisAdapter extends BaseAdapter {
+class Adapter extends ArrayAdapter<Imovel> {
 
-    private Context context;
-    private ArrayList<Imovel> imoveis;
-
-    public ImoveisAdapter(Context context, ArrayList<Imovel> imoveis) {
-        this.context = context;
-
-        this.imoveis = imoveis;
+    public Adapter(Context context, ArrayList<Imovel> imoveis) {
+        super(context, 0, imoveis);
     }
+
+
 
     @Override
-    public int getCount() {
-        return imoveis.size();
+    public View getView(final int position, View convertView, final ViewGroup parent) {
+        final Imovel imovel = getItem(position);
+
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.adapter_imoveis, parent, false);
+        }
+
+        TextView name = convertView.findViewById(R.id.lblNomeImovel);
+        name.setText(imovel.getNome());
+
+        TextView cidade = convertView.findViewById(R.id.lblCidade);
+        cidade.setText(imovel.getCidade());
+
+        TextView director = convertView.findViewById(R.id.lblEndereco);
+        director.setText(imovel.getEndereco());
+
+        TextView telefone = convertView.findViewById(R.id.lblTelefone);
+        telefone.setText(imovel.getTelefone());
+
+        TextView valor = convertView.findViewById(R.id.lblValor);
+        valor.setText(String.valueOf( imovel.getValor() ));
+
+
+        return convertView;
     }
 
-    @Override
-    public Object getItem(int i) {
-        return imoveis.get(i);
-    }
-
-    @Override
-    public long getItemId(int i) {
-        return 0;
-    }
-
-    @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
-        Imovel imovel = (Imovel) this.getItem(i);
-
-        //TODO implementar mecanismo para estilizar elemento da lista
-        TextView lblNomeImovel = new TextView(this.context);
-        lblNomeImovel.setText(imovel.getNome() + " -- " + imovel.getValor());
-
-        return lblNomeImovel;
-    }
 }

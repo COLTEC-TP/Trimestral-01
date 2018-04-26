@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MoreAqui</string>
+    <string name="search">Pesquisar</string>
+    <string name="editNome">Nome</string>
+    <string name="editCidade">Cidade</string>
+    <string name="editEndereco">Endereço</string>
+    <string name="editTelefone">Telefone</string>
+    <string name="editValor">Valor</string>
+    <string name="button">Adicionar</string>
 </resources>
