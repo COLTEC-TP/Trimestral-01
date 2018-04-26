@@ -1,6 +1,7 @@
 package br.ufmg.coltec.tp.moreaqui;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -41,10 +42,28 @@ public class ImoveisAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         Imovel imovel = (Imovel) this.getItem(i);
 
-        //TODO implementar mecanismo para estilizar elemento da lista
-        TextView lblNomeImovel = new TextView(this.context);
-        lblNomeImovel.setText(imovel.getNome() + " -- " + imovel.getValor());
+        // Mecanismo de estilização da lista //
+        View newView = LayoutInflater.from(this.context).inflate(R.layout.list_imoveis, viewGroup, false);
 
-        return lblNomeImovel;
+        TextView nome = newView.findViewById(R.id.lbl_nome);
+        TextView cidade = newView.findViewById(R.id.lbl_cidade);
+        TextView endereco = newView.findViewById(R.id.lbl_endereco);
+        TextView valor = newView.findViewById(R.id.lbl_valor);
+        TextView telefone = newView.findViewById(R.id.lbl_telefone);
+
+        nome.setText(imovel.getNome());
+        cidade.setText(imovel.getCidade());
+        endereco.setText(imovel.getEndereco());
+
+        valor.setText(viewGroup.getResources().getString(R.string.moeda_valor) + String.valueOf(imovel.getValor())); // Converte o valor double para string //
+        telefone.setText(viewGroup.getResources().getString(R.string.telefone) + imovel.getTelefone());
+        notifyDataSetChanged();
+
+        return newView;
+
+        //TODO implementar mecanismo para estilizar elemento da lista (OK)
+        //TextView lblNomeImovel = new TextView(this.context);
+        //lblNomeImovel.setText(imovel.getNome() + " -- " + imovel.getValor());
+        // return lblNomeImovel;
     }
 }

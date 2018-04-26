@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">MoreAqui</string>
+
+    <!-- Cadastro de um novo imóvel -->
+    <string name="add_titulo">Cadastrar Imóvel</string>
+    <string name="add_nome">Nome</string>
+    <string name="add_valor">Valor</string>
+    <string name="add_endereco">Endereco</string>
+    <string name="add_cidade">Cidade</string>
+    <string name="add_telefone">Telefone</string>
+    <string name="add_btn">Adicionar</string>
+
+    <!-- Para utilizar no java -->
+    <string name="telefone">Telefone: </string>
+    <string name="moeda_valor">R$</string>
 </resources>

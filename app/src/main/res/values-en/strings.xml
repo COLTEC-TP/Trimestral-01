@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Cadastro de um novo imóvel -->
+    <string name="add_titulo">Register Immobile</string>
+    <string name="add_nome">Name</string>
+    <string name="add_valor">Price</string>
+    <string name="add_endereco">Address</string>
+    <string name="add_cidade">City</string>
+    <string name="add_telefone">Phone</string>
+    <string name="add_btn">Add</string>
+
+
+    <!-- Para utilizar no java -->
+    <string name="telefone">Phone: </string>
+    <string name="moeda_valor">R$</string>
+
+</resources>

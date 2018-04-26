@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.ufmg.coltec.tp.moreaqui.NovoImovelActivity">
+
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_titulo"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/lbl_titulo"/>
+
+    <!-- Nome -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_titulo"
+        android:hint="@string/add_nome"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/txt_nome"
+        />
+
+    <!-- Valor -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_nome"
+        android:hint="@string/add_valor"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@id/txt_nome"
+        android:layout_alignEnd="@id/txt_nome"
+        android:inputType="number"
+        android:id="@+id/txt_valor"
+        />
+
+    <!-- Cidade -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_valor"
+        android:hint="@string/add_cidade"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@id/txt_nome"
+        android:layout_alignEnd="@id/txt_nome"
+        android:id="@+id/txt_cidade"
+        />
+
+
+    <!-- Endereco -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_cidade"
+        android:hint="@string/add_endereco"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@id/txt_nome"
+        android:layout_alignEnd="@id/txt_nome"
+        android:id="@+id/txt_endereco"
+        />
+
+    <!-- Telefone -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_endereco"
+        android:hint="@string/add_telefone"
+        android:inputType="phone"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@id/txt_nome"
+        android:layout_alignEnd="@id/txt_nome"
+        android:id="@+id/txt_telefone"
+        />
+
+    <!-- Botão de Adicionar -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_btn"
+        android:layout_below="@id/txt_telefone"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:id="@+id/btn_add"/>
+
+</RelativeLayout>
