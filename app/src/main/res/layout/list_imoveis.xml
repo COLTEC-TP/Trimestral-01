@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/lbl_nome"
+        android:layout_margin="10dp"
+        android:layout_alignParentStart="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cidade"
+        android:layout_below="@id/lbl_nome"
+        android:layout_alignStart="@id/lbl_nome"
+        android:id="@+id/lbl_cidade"
+        android:textSize="18dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endereço"
+        android:layout_below="@id/lbl_cidade"
+        android:layout_alignStart="@id/lbl_cidade"
+        android:layout_marginTop="6dp"
+        android:id="@+id/lbl_endereco"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor"
+        android:textSize="22dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/lbl_nome"
+        android:id="@+id/lbl_valor"
+        android:textColor="@color/colorAccent"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefone"
+        android:layout_below="@id/lbl_valor"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/lbl_telefone"
+        android:textSize="18dp"/>
+
+</RelativeLayout>
