@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MoreAqui</string>
+    <string name="identificação">Identificação</string>
+    <string name="endereco">Endereço</string>
+    <string name="cidade">Cidade</string>
+    <string name="aluguel">Aluguel</string>
+    <string name="telefone">Telefone</string>
+    <string name="add">Adicionar</string>
+    <string name="imovel_identificação">Identificação do Imóvel</string>
+    <string name="adcionoar_imovel">Adicionar Imóvel</string>
+    <string name="procurar">Procurar Imovel</string>
 </resources>
