@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MoreAqui</string>
+    <string name="Identificação">Identificação do imóvel</string>
+    <string name="editarEndereço">Rua e bairro do imóvel</string>
+    <string name="editarCidade">Cidade onde o imóvel está localizado</string>
+    <string name="editarAluguel">Valor cobrado para se alugar o imóvel</string>
+    <string name="Telefone">Telefone para contactar a imobiliária</string>
+    <string name="criar">Adicionar Imovel</string>
+
+
 </resources>
