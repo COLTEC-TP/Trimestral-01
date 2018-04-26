@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LiveHere</string>
+
+    <string name="nome">Name:</string>
+    <string name="endereco">Path:</string>
+    <string name="cidade">City:</string>
+    <string name="telefone">Phone:</string>
+    <string name="valor">Value:</string>
+    <string name="salvar">Save</string>
+    <string name="adicionar">Add</string>
+    <string name="busca">Search</string>
+</resources>

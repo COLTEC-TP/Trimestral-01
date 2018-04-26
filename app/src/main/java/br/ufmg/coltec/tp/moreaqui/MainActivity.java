@@ -15,6 +15,9 @@ import java.util.ArrayList;
 
 public class MainActivity extends Activity {
 
+    ImoveisAdapter adapter;
+    ArrayList<Imovel> imoveis = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,22 +25,34 @@ public class MainActivity extends Activity {
 
         // recupera os imóveis cadastrados no DAO até o momento e os carrega na lista
         ImovelDAO dao = ImovelDAO.getInstance();
-        this.atualizarLista(dao.getImoveis());
+        imoveis.clear();
+        imoveis.addAll(dao.getImoveis());
+        this.atualizarLista();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        ImovelDAO dao = ImovelDAO.getInstance();
+        imoveis.clear();
+        imoveis.addAll(dao.getImoveis());
+        this.atualizarLista();
+    }
 
     /**
      * Método auxiliar para atualizar a ListView. Utilizar quando os dados da lista
      * são atualizados
      *
      * OBS: INEFICIENTE. NÃO FAÇAM ISSO EM CASA :)
-     *
-     * @param imoveis lista que será enviada ao adapter
      */
-    private void atualizarLista(ArrayList<Imovel> imoveis) {
+    private void atualizarLista() {
         ListView imoveisList = findViewById(R.id.imoveisList);
-        imoveisList.setAdapter(new ImoveisAdapter(this, imoveis));
-
+        if(adapter == null) {
+            adapter = new ImoveisAdapter(this, imoveis);
+            imoveisList.setAdapter(adapter);
+        } else {
+            adapter.notifyDataSetChanged();
+        }
     }
 
     @Override
@@ -57,14 +72,14 @@ public class MainActivity extends Activity {
                 // executado enquanto texto é alterado pelo usuário
 
                 ImovelDAO crud = ImovelDAO.getInstance();
-                atualizarLista(crud.filtrarImoveis(s));
-
+                imoveis.clear();
+                imoveis.addAll(crud.filtrarImoveis(s));
+                atualizarLista();
                 return false;
             }
         });
 
         return true;
-//        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -76,7 +91,9 @@ public class MainActivity extends Activity {
                 Intent adicionar = new Intent(MainActivity.this, NovoImovelActivity.class);
                 startActivity(adicionar);
                 ImovelDAO crud = ImovelDAO.getInstance();
-                atualizarLista(crud.getImoveis());
+                imoveis.clear();
+                imoveis.addAll(crud.getImoveis());
+                atualizarLista();
                 return true;
             default: return super.onOptionsItemSelected(item);
         }
