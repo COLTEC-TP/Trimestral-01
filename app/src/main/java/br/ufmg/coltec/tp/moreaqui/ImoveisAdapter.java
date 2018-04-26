@@ -18,7 +18,6 @@ public class ImoveisAdapter extends BaseAdapter {
 
     public ImoveisAdapter(Context context, ArrayList<Imovel> imoveis) {
         this.context = context;
-
         this.imoveis = imoveis;
     }
 
