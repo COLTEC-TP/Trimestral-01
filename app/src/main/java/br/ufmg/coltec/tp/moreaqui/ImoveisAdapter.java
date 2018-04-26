@@ -1,6 +1,7 @@
 package br.ufmg.coltec.tp.moreaqui;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -39,12 +40,25 @@ public class ImoveisAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        Imovel imovel = (Imovel) this.getItem(i);
+        Imovel currentImovel = this.imoveis.get(i);
 
-        //TODO implementar mecanismo para estilizar elemento da lista
-        TextView lblNomeImovel = new TextView(this.context);
-        lblNomeImovel.setText(imovel.getNome() + " -- " + imovel.getValor());
+        // recupera a view do adapter que será customizada
+        View newView = LayoutInflater.from(this.context).inflate(R.layout.adapter_imoveis, viewGroup, false);
 
-        return lblNomeImovel;
+        // recupera cada um dos campos do item
+        TextView lblNome = newView.findViewById(R.id.nome);
+        TextView lblEndereco = newView.findViewById(R.id.endereco);
+        TextView lblCidade = newView.findViewById(R.id.cidade);
+        TextView lblValor = newView.findViewById(R.id.valor);
+        TextView lblTelefone = newView.findViewById(R.id.telefone);
+
+        // define o valor de cada um dos campos
+        lblNome.setText(currentImovel.getNome());
+        lblEndereco.setText(currentImovel.getEndereco());
+        lblCidade.setText(currentImovel.getCidade());
+        lblValor.setText(currentImovel.getValor().toString());
+        lblTelefone.setText(currentImovel.getTelefone());
+
+        return newView;
     }
 }
