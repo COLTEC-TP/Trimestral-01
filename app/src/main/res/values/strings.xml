@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">MoreAqui</string>
+    <string name="name">Name: </string>
+    <string name="end">Address: </string>
+    <string name="cidade">City: </string>
+    <string name="valor">Price: </string>
+    <string name="tel">Contact: </string>
+    <string name="add">Save</string>
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+    <string name="shareusing">Share Using:</string>
+    <string name="sure">Are you Sure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="remove">Are you sure that you want to exclude</string>
 </resources>
