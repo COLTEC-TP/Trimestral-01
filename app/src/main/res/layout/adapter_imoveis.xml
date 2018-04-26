@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    style="@style/LayoutListStyle">
+    <TextView
+        android:id="@+id/identifier_tv"
+        style="@style/FeaturedStyle"
+        tools:text="@string/app_name" />
+    <TextView
+        android:id="@+id/address_tv"
+        style="@style/LightStyle"
+        android:layout_below="@id/city_tv"
+        tools:text="@string/app_name" />
+    <TextView
+        android:id="@+id/telephone_tv"
+        style="@style/LightStyle"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/rent_price_container"
+        tools:text="@string/app_name" />
+    <TextView
+        android:id="@+id/city_tv"
+        style="@style/LightStyle"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@+id/identifier_tv"
+        tools:text="@string/app_name" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rent_price_container">
+        <TextView
+            android:id="@+id/rent_price_unit_tv"
+            style="@style/FeaturedStyle"
+            android:layout_toStartOf="@id/rent_price_tv"
+            android:text="@string/unit_rent_price" />
+        <TextView
+            android:id="@+id/rent_price_tv"
+            style="@style/FeaturedStyle"
+            android:layout_alignParentEnd="true"
+            tools:text="@string/app_name" />
+    </RelativeLayout>
+
+</RelativeLayout>

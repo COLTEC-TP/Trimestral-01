@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MoreAqui</string>
+    <string name="action_add_property">Adicionar um imóvel</string>
+    <string name="action_search_property">Procurar por um imóvel</string>
+    <string name="property_telephone">Telefone</string>
+    <string name="property_address">Endereço</string>
+    <string name="property_city">Cidade</string>
+    <string name="property_rent_price">Valor do aluguel</string>
+    <string name="hint_property_name">Nome</string>
+    <string name="hint_property_telephone">Telefone</string>
+    <string name="hint_property_address">Endereço</string>
+    <string name="hint_property_rent_price">Valor do aluguel</string>
+    <string name="hint_property_city">Cidade</string>
+    <string name="unit_rent_price">R$</string>
+    <string name="property_name">Nome</string>
+    <string name="action_save_property">Salvar propriedade</string>
+    <string name="toast_adapter_null">Não existe nenhuma propriedade</string>
+    <string name="toast_added_property">Propriedade adicionada!</string>
+</resources>

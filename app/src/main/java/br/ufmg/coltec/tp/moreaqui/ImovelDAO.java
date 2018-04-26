@@ -90,6 +90,13 @@ public class ImovelDAO {
         // está incluso dentro do nome de cada imóvel (Utilize o String.contains)
 
 
+        for (Imovel imovel : instance.getImoveis()) {
+            if (imovel.getNome().toLowerCase().contains(nome.toLowerCase())) {
+                imoveisFiltrados.add(imovel);
+            }
+        }
+
+
         return imoveisFiltrados;
     }
 
