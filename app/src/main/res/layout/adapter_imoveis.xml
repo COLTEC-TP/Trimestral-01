@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:id="@+id/listagem_View">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/img_imovel"
+        android:src="@drawable/icon_home"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_imovel"
+        android:layout_marginLeft="15dp"
+        android:textSize="23dp"
+        android:id="@+id/txt_nome"
+        android:text="Eldorado"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt_cidade"
+        android:text="Contagem" />
+
+    <TextView
+        android:id="@+id/txt_endereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_nome"
+        android:layout_below="@+id/txt_nome"
+        android:text="Praça da CEMIG, 500" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(31) 97070-7070"
+        android:inputType="number"
+        android:id="@+id/txt_telefone"
+        android:layout_toRightOf="@+id/img_telefone"
+        android:layout_alignBottom="@+id/img_imovel"
+        android:layout_marginLeft="10px" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/img_imovel"
+        android:id="@+id/txt_valor"
+        android:text="800"
+        android:layout_alignParentRight="true"
+        android:textColor="#1B7D25"
+        android:textStyle="bold"
+        android:textSize="50px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/img_imovel"
+        android:id="@+id/txt_cifrao"
+        android:text="R$"
+        android:layout_toLeftOf="@+id/txt_valor"
+        android:layout_marginRight="7px"
+        android:textColor="#1B7D25"
+        android:textSize="50px"/>
+
+    <ImageView
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:id="@+id/img_telefone"
+        android:src="@drawable/telefone_icon"
+        android:layout_alignBottom="@id/img_imovel"
+        android:layout_alignLeft="@id/txt_nome"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>
