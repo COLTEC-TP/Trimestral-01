@@ -17,6 +17,10 @@ public class Imovel {
         this.telefone = telefone;
     }
 
+    public Imovel(){
+        this(null, null, null, null, null);
+    }
+
     public String getNome() {
         return nome;
     }

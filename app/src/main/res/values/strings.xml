@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MoreAqui</string>
+    <string name="imovelNome">Identificação do Imovel</string>
+    <string name="imovelEndereco">Endereço do Imovel</string>
+    <string name="imovelCidade">Cidade do Imovel</string>
+    <string name="imovelValor">Valor de aluguel do Imovel</string>
+    <string name="imovelTelefone">Telefone de contato</string>
+    <string name="Adicionar">Adicione aqui seu imovel para aluguel</string>
+    <string name="botao">Adicionar</string>
 </resources>

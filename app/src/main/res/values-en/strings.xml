@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LiveHere</string>
+    <string name="imovelNome">Realty indentification</string>
+    <string name="imovelEndereco">Realty address</string>
+    <string name="imovelCidade">City of the Realty</string>
+    <string name="imovelValor">Rent Value</string>
+    <string name="imovelTelefone">Contact phone</string>
+    <string name="Adicionar">Rent out your realty here</string>
+    <string name="botao">Add</string>
+</resources>

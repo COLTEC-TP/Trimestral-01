@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.ufmg.coltec.tp.moreaqui.NovoImovelActivity">
+
+    <EditText
+        android:id="@+id/nomeDoImovel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Adicionar"
+        android:hint="@string/imovelNome"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/enderecoDoImovel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/nomeDoImovel"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/imovelEndereco" />
+
+    <TextView
+        android:id="@+id/Adicionar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Adicionar"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/cidadeDoImovel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/enderecoDoImovel"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/imovelCidade" />
+
+    <EditText
+        android:id="@+id/valorDoImovel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cidadeDoImovel"
+        android:ems="10"
+        android:hint="@string/imovelValor"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/telefoneDoImovel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/valorDoImovel"
+        android:ems="10"
+        android:hint="@string/imovelTelefone"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/telefoneDoImovel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+        android:text="@string/botao" />
+
+
+</RelativeLayout>
