@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/Imagem_Imovel"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_launcher_background"
+        />
+
+    <TextView
+        android:id="@+id/Nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/Imagem_Imovel"
+        android:text="Nome"
+        android:textColor="#000"
+        android:textSize="14dp" />
+
+
+
+    <TextView
+        android:id="@+id/Valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Nome"
+        android:layout_toEndOf="@+id/Imagem_Imovel"
+        android:text="Valor"
+        android:textColor="#000"
+
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/Cidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="60px"
+        android:text="Cidade"
+        android:textSize="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:id="@+id/Endereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Cidade"
+        android:layout_alignParentEnd="true"
+        android:text="Endereço"
+        android:textSize="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/Telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Endereco"
+        android:layout_alignParentEnd="true"
+        android:text="Telefone"
+        android:textSize="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+
+
+</RelativeLayout>
