@@ -1,6 +1,7 @@
 package br.ufmg.coltec.tp.moreaqui;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -37,14 +38,43 @@ public class ImoveisAdapter extends BaseAdapter {
         return 0;
     }
 
+//    @Override
+//    public View getView(int i, View view, ViewGroup viewGroup) {
+//        Imovel imovel = (Imovel) this.getItem(i);
+//
+//
+//
+//
+//
+//        //TODO implementar mecanismo para estilizar elemento da lista
+//        TextView lblNomeImovel = new TextView(this.context);
+//        lblNomeImovel.setText(imovel.getNome() + " -- " + imovel.getValor());
+//
+//        return lblNomeImovel;
+//    }
+
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         Imovel imovel = (Imovel) this.getItem(i);
 
-        //TODO implementar mecanismo para estilizar elemento da lista
-        TextView lblNomeImovel = new TextView(this.context);
-        lblNomeImovel.setText(imovel.getNome() + " -- " + imovel.getValor());
+        // recupera a view do adapter que será customizada
+        View newView = LayoutInflater.from(this.context).inflate(R.layout.adapter_imoveis, viewGroup, false);
 
-        return lblNomeImovel;
+        // recupera cada um dos campos do item
+        TextView Nome = newView.findViewById(R.id.Nome);
+        TextView Endereco = newView.findViewById(R.id.Endereco);
+        TextView Cidade = newView.findViewById(R.id.Cidade);
+        TextView Valor = newView.findViewById(R.id.Valor);
+        TextView Telefone = newView.findViewById(R.id.Telefone);
+
+        // define o valor de cada um dos campos
+        Nome.setText(imovel.getNome() + imovel.getValor());
+        Endereco.setText(imovel.getEndereco() );
+        Valor.setText(imovel.getValor().toString() + imovel.getValor());
+        Telefone.setText(imovel.getTelefone().toString());
+        Cidade.setText(imovel.getCidade().toString() + imovel.getValor());
+
+        return newView;
     }
+
 }
