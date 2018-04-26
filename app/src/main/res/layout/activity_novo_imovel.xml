@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+
+    <TableRow>
+        <TextView android:text="Nome: " android:padding="3dip" android:layout_marginTop="10dp"/>
+        <EditText android:padding="3dp" android:inputType="text" android:layout_marginTop="10dp"
+            android:id="@+id/nome"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="Cidade: " android:padding="3dip"/>
+        <EditText android:padding="3dp" android:inputType="text"
+            android:id="@+id/cidade"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="Endereço: " android:padding="3dip"/>
+        <EditText android:padding="3dp" android:inputType="text"
+            android:id="@+id/endereco"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="Valor(R$): " android:padding="3dip"/>
+        <EditText android:padding="3dp" android:inputType="text"
+            android:id="@+id/valor"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="Telefone: " android:padding="3dip"/>
+        <EditText android:padding="3dp" android:inputType="number"
+            android:id="@+id/telefone"/>
+    </TableRow>
+
+    <Button android:text="Enviar"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnOk"/>
+</TableLayout>

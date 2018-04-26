@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ImoveisAdapter">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl_imovel_nome"
+        android:textSize="20dp"
+        android:text="Nome:"
+        android:padding="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/lbl_imovel_valor"
+        android:textSize="20dp"
+        android:text="R$"
+        android:layout_marginRight="100dp"
+        android:padding="4dp"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/lbl_imovel_nome"
+        android:id="@+id/lbl_imovel_cidade"
+        android:text="Cidade:"
+        android:layout_marginRight="80dp"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_imovel_valor"
+        android:id="@+id/lbl_imovel_endereco"
+        android:text="Endereco:"
+        android:layout_marginLeft="4dp"/>
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_imovel_endereco"
+        android:id="@+id/lbl_imovel_telefone"
+        android:text="(xx)xxxx-xxxx"
+        android:layout_marginLeft="4dp"/>
+</RelativeLayout>
+
