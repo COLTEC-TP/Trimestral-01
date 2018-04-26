@@ -88,9 +88,17 @@ public class ImovelDAO {
         // TODO implementar ação de filtragem
         // Dica: Para implementar a filtragem, você deverá verificar se o parâmetro "nome"
         // está incluso dentro do nome de cada imóvel (Utilize o String.contains)
-
-
-        return imoveisFiltrados;
+        for(int i = 0; i<imoveis.size();i++){
+            if(imoveis.get(i).getNome().toLowerCase().contains(nome.toLowerCase())){
+                imoveisFiltrados.add(imoveis.get(i));
+            }
+        }
+        if(nome.equals("")){
+            imoveisFiltrados = null;
+            return imoveis;
+        } else{
+            return imoveisFiltrados;
+        }
     }
 
     /**

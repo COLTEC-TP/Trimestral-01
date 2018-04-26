@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MoreAqui</string>
+    <string name="identificação">Identification</string>
+    <string name="endereco">Address</string>
+    <string name="cidade">City</string>
+    <string name="aluguel">Rental Price</string>
+    <string name="telefone">Phone Number</string>
+    <string name="add">Add</string>
+    <string name="imovel_identificação">Identification of The Property</string>
+    <string name="adcionoar_imovel">Add Property</string>
+    <string name="procurar">Property Search</string>
+</resources>
