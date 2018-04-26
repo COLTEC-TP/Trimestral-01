@@ -1,11 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MoreAqui</string>
     <string name="add">Novo Imóvel</string>
-    <string name="search">Procrurar</string>
-    <string name="nome">Nome</string>
-    <string name="endereco">Endereço</string>
+    <string name="search">Procurar</string>
     <string name="cidade">Cidade</string>
-    <string name="valor">Valor</string>
+    <string name="endereco">Endereço</string>
+    <string name="nome">Nome</string>
     <string name="telefone">Telefone</string>
+    <string name="valor">Valor</string>
     <string name="adicionar">Adicionar</string>
 </resources>
