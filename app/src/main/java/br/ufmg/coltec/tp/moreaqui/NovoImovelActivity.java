@@ -55,4 +55,5 @@ public class NovoImovelActivity extends Activity {
         });
     }
 
+    
 }
