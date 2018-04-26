@@ -17,6 +17,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         //Botao cadastrar imovel
         Button botaoCadastrarImovel = findViewById(R.id.botaoCadastrarImovel);
         botaoCadastrarImovel.setOnClickListener(new View.OnClickListener() {
@@ -31,6 +32,8 @@ public class MainActivity extends Activity {
         // recupera os imóveis cadastrados no DAO até o momento e os carrega na lista
         ImovelDAO dao = ImovelDAO.getInstance();
         this.atualizarLista(dao.getImoveis());
+
+
     }
 
 

@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/botaoAdicionarImovel"
         android:layout_marginTop="96dp"
-        android:hint="Nome"
+        android:hint="@string/nome"
         android:textColor="#000000" />
 
     <EditText
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/Nome"
         android:layout_below="@+id/Nome"
-        android:hint="Endereco"
+        android:hint="@string/endereco"
         android:textColor="#000000" />
 
     <EditText
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/Endereco"
         android:layout_below="@+id/Endereco"
-        android:hint="Cidade"
+        android:hint="@string/cidade"
         android:textColor="#000000" />
 
     <EditText
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/Cidade"
         android:layout_below="@+id/Cidade"
-        android:hint="Valor"
+        android:hint="@string/valor"
         android:textColor="#000000" />
 
     <EditText
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/Valor"
         android:layout_below="@+id/Valor"
-        android:hint="Telefone"
+        android:hint="@string/telefone"
         android:textColor="#000000" />
 
 
@@ -61,7 +61,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="107dp"
         android:background="#565656"
-        android:text="Cadastrar Imovel"
+        android:text="@string/botaoCadastrar"
         android:textColor="#FFFFFF"
         android:textSize="20dp" />
 

@@ -31,7 +31,6 @@ public class adicionarImovel extends Activity {
         Telefone = (EditText) findViewById(R.id.Telefone);
         botaoAdicionarImovel = (Button) findViewById(R.id.botaoAdicionarImovel);
 
-
         botaoAdicionarImovel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
