@@ -5,11 +5,11 @@ public class Imovel {
     private String nome;
     private String endereco;
     private String cidade;
-    private Double valor;
+    private String valor; //para Valor dado em xx,xx BRL
     private String telefone;
 
 
-    public Imovel(String nome, String endereco, String cidade, Double valor, String telefone) {
+    public Imovel(String nome, String endereco, String cidade, String valor, String telefone) {
         this.nome = nome;
         this.endereco = endereco;
         this.cidade = cidade;
@@ -41,11 +41,11 @@ public class Imovel {
         this.cidade = cidade;
     }
 
-    public Double getValor() {
+    public String getValor() {
         return valor;
     }
 
-    public void setValor(Double valor) {
+    public void setValor(String valor) {
         this.valor = valor;
     }
 

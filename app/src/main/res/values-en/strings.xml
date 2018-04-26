@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MoreAqui</string>
+
+    <string name="Identificação">Property ID</string>
+    <string name="editar_Endereço">Street and neighborhood of the property</string>
+    <string name="editar_Cidade">City where the property is located</string>
+    <string name="editar_Aluguel">Amount charged to rent the property</string>
+    <string name="Telefone">Phone to contact real estate</string>
+    <string name="criar">Add Imovel</string>
+
+</resources>
