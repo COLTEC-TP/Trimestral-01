@@ -7,6 +7,7 @@ public class Imovel {
     private String cidade;
     private Double valor;
     private String telefone;
+    private char[] date;
 
 
     public Imovel(String nome, String endereco, String cidade, Double valor, String telefone) {
@@ -56,4 +57,6 @@ public class Imovel {
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
+
+
 }

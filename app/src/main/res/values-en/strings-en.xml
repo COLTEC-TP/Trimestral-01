@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LiveHere</string>
+    <string name="search">search</string>
+    <string name="editNome">Name</string>
+    <string name="editCidade">City</string>
+    <string name="editEndereco">Address</string>
+    <string name="editTelefone">Phone</string>
+    <string name="editValor">Price</string>
+    <string name="button">Add</string>
+</resources>
