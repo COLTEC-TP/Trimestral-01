@@ -83,14 +83,28 @@ public class ImovelDAO {
      */
     public ArrayList<Imovel> filtrarImoveis(String nome) {
         ArrayList<Imovel> imoveisFiltrados = new ArrayList<>();
+        ArrayList<Imovel> imoveisFiltrando = new ArrayList<>();
+
+        imoveisFiltrando = imoveis;
+
+        int i = 0;
+
+        while (i < imoveisFiltrando.size()){
+            Imovel imovelFiltrado = imoveisFiltrando.get(i);
+
+            if (imovelFiltrado.getNome().toLowerCase().contains(nome.toLowerCase())) {
+                imoveisFiltrados.add(imovelFiltrado);
+            }
+            i++;
+        }
 
 
-        // TODO implementar ação de filtragem
-        // Dica: Para implementar a filtragem, você deverá verificar se o parâmetro "nome"
-        // está incluso dentro do nome de cada imóvel (Utilize o String.contains)
+            // TODO implementar ação de filtragem
+            // Dica: Para implementar a filtragem, você deverá verificar se o parâmetro "nome"
+            // está incluso dentro do nome de cada imóvel (Utilize o String.contains)
 
 
-        return imoveisFiltrados;
+            return imoveisFiltrados;
     }
 
     /**
@@ -107,7 +121,7 @@ public class ImovelDAO {
      * Recupera lista completa dos imóveis
      * @return ArrayList com todos os imóveis cadastrados no DAO
      */
-    public ArrayList<Imovel> getImoveis() {
+    public ArrayList<Imovel> getImoveis(){
         return instance.imoveis;
     }
 }
