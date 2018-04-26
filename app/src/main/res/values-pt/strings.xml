@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MoreAqui</string>
+    <string name="name">Nome: </string>
+    <string name="end">Endereço: </string>
+    <string name="cidade">Cidade: </string>
+    <string name="valor">Valor: </string>
+    <string name="tel">Telefone: </string>
+    <string name="add">Salvar</string>
+    <string name="share">Compartilhar</string>
+    <string name="delete">Deletar</string>
+    <string name="shareusing">Compartilhar Com:</string>
+    <string name="sure">Tem certeza?</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="remove">Deseja Excluir</string>
+</resources>

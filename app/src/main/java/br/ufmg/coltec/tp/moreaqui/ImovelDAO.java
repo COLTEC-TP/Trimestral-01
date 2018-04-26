@@ -84,11 +84,14 @@ public class ImovelDAO {
     public ArrayList<Imovel> filtrarImoveis(String nome) {
         ArrayList<Imovel> imoveisFiltrados = new ArrayList<>();
 
+        String nomeAux = nome.toLowerCase();
+        String aux;
 
-        // TODO implementar ação de filtragem
-        // Dica: Para implementar a filtragem, você deverá verificar se o parâmetro "nome"
-        // está incluso dentro do nome de cada imóvel (Utilize o String.contains)
-
+        for (int i = 0; i < this.imoveis.size(); i++){
+            aux = this.imoveis.get(i).getNome().toLowerCase();
+            if (aux.contains(nomeAux))
+                imoveisFiltrados.add(this.imoveis.get(i));
+        }
 
         return imoveisFiltrados;
     }
