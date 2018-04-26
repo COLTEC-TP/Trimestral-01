@@ -7,4 +7,10 @@
         android:showAsAction="always"
         android:title="Cadastrar" />
 
+    <item
+        android:id="@+id/menu_filtro"
+        android:showAsAction="always"
+        android:title="Filtro"
+        android:actionViewClass="android.widget.SearchView" />
+
 </menu>

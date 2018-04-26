@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -36,7 +37,31 @@ public class MainActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main,menu);
-        return super.onCreateOptionsMenu(menu);
+
+        MenuItem item = menu.findItem(R.id.menu_filtro);
+        SearchView searchView = (SearchView) item.getActionView();
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                ArrayList<Imovel> listaFiltrada = ImovelDAO.getInstance().filtrarImoveis(s);
+                atualizarLista(listaFiltrada);
+                if(listaFiltrada.isEmpty()) Toast.makeText(MainActivity.this,"Nada encontrado",Toast.LENGTH_SHORT).show();
+                return false;
+            }
+            @Override
+            public boolean onQueryTextChange(String s) {
+                return false;
+            }
+        });
+        searchView.setOnCloseListener(new SearchView.OnCloseListener() {
+            @Override
+            public boolean onClose() {
+                atualizarLista(ImovelDAO.getInstance().getImoveis());
+                return false;
+            }
+        });
+
+        return true;
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
