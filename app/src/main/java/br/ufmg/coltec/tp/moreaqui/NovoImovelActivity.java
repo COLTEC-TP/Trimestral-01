@@ -41,7 +41,7 @@ public class NovoImovelActivity extends Activity {
                     finish(); //Finalizar essa atividade e assim voltar para a anterior
                 }
                 else {
-                    Toast.makeText(NovoImovelActivity.this,"Por favor, preencha todos os campos",Toast.LENGTH_LONG).show();
+                    Toast.makeText(NovoImovelActivity.this,getString(R.string.empty),Toast.LENGTH_LONG).show();
                 }
             }
         });

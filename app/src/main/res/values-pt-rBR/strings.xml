@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MoreAqui</string>
+
+    <string name="moneyUnit">R$</string>
+
+    <string name="notFound">Nada encontrado</string>
+
+    <string name="empty">Por favor, preencha todos os campos</string>
+
+    <string name="name">Nome do imóvel</string>
+    <string name="address">Endereço</string>
+    <string name="city">Cidade</string>
+    <string name="value">Valor do aluguel</string>
+    <string name="phone">Telefone</string>
+    <string name="button">Cadastrar</string>
+
+</resources>

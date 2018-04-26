@@ -52,7 +52,7 @@ public class ImoveisAdapter extends BaseAdapter {
         TextView cidade = newView.findViewById(R.id.item_cidade);
 
         nome.setText(imovel.getNome());
-        valor.setText("R$ " + imovel.getValor().toString());
+        valor.setText(context.getString(R.string.moneyUnit) + " " + imovel.getValor().toString());
         endereco.setText(imovel.getEndereco());
         telefone.setText(imovel.getTelefone());
         cidade.setText(imovel.getCidade());

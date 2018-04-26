@@ -45,7 +45,7 @@ public class MainActivity extends Activity {
             public boolean onQueryTextSubmit(String s) {
                 ArrayList<Imovel> listaFiltrada = ImovelDAO.getInstance().filtrarImoveis(s);
                 atualizarLista(listaFiltrada);
-                if(listaFiltrada.isEmpty()) Toast.makeText(MainActivity.this,"Nada encontrado",Toast.LENGTH_SHORT).show();
+                if(listaFiltrada.isEmpty()) Toast.makeText(MainActivity.this,getString(R.string.notFound),Toast.LENGTH_SHORT).show();
                 return false;
             }
             @Override
