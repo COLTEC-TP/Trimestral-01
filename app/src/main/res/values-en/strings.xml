@@ -1,31 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MoreAqui</string>
-    <string name="action_add_property">Add property</string>
-    <string name="action_search_property">Search Property</string>
+    <string name="action_add_property">Add a Property</string>
+    <string name="action_search_property">Search for a Property</string>
+    <string name="property_telephone">Telephone</string>
+    <string name="property_address">Address</string>
+    <string name="property_city">City</string>
+    <string name="property_rent_price">Rent Price</string>
+    <string name="hint_property_name">Name</string>
+    <string name="hint_property_telephone">Telephone</string>
+    <string name="hint_property_address">Address</string>
+    <string name="hint_property_rent_price">Rent Price</string>
+    <string name="hint_property_city">City</string>
+    <string name="unit_rent_price">$</string>
+    <string name="property_name">Name</string>
     <string name="action_save_property">Save Property</string>
     <string name="toast_adapter_null">There isn\'t any property here</string>
     <string name="toast_added_property">Added a Property</string>
-
-    <string name="property_name">Name</string>
-
-    <string name="property_telephone">Telephone</string>
-
-    <string name="property_address">Address</string>
-
-    <string name="property_city">City</string>
-
-    <string name="property_rent_price">Rent Price</string>
-
-    <string name="hint_property_name">Name</string>
-
-    <string name="hint_property_telephone">Telephone</string>
-
-    <string name="hint_property_address">Address</string>
-
-    <string name="hint_property_rent_price">Rent Price</string>
-
-    <string name="hint_property_city">City</string>
-
-    <string name="unit_rent_price">R$</string>
-
 </resources>
